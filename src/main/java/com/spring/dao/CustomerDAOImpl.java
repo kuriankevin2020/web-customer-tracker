@@ -37,6 +37,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		return customer;
 	}
 
+	@SuppressWarnings("rawtypes")
 	@Override
 	public void deleteCustomer(int theId) {
 		Session session = sessionFactory.getCurrentSession();
